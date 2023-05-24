@@ -55,4 +55,26 @@ function descargarCV() {
   document.body.removeChild(enlaceDescarga);
 }
 
-  
+
+const btn = document.getElementById('button');
+const formulario = document.getElementById('form');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.textContent = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_ix8rvxg';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.innerHTML = 'Enviar Mensaje <i class="fa-solid fa-paper-plane"></i> <span class="overlay"></span>';
+      formulario.reset();
+      alert('Enviado!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

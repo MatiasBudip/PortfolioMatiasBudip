@@ -336,16 +336,17 @@
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
-            <div class="fila">
+            <form id="form" class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <input type="text" id="name" name="name" placeholder="Tú Nombre" required>
+                    <input type="text" id="phone" name="phone" placeholder="Número telefónico" required>
+                    <input type="text" id="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Tema" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+                    <button id="button">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
@@ -369,7 +370,13 @@
                         </ul>
                     </div> -->
                 </div>
-            </div>
+            </form>
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('6O41riYmL23fKMHF-')
+            </script>
         </div>
     </section>
 
