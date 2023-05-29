@@ -287,65 +287,65 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .CSharp{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s CSharp forwards;
 }
-@keyframes photoshop {
+@keyframes CSharp {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 80%;}
 }
 
-.skills .skill .wordpress{
+.skills .skill .vue{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s vue forwards;
 }
-@keyframes wordpress {
+@keyframes vue {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 70%;}
 }
 
-.skills .skill .drupal{
+.skills .skill .blazor{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s blazor forwards;
 }
-@keyframes drupal {
+@keyframes blazor {
     0%{width: 0%;}
     100%{width: 55%;}
 }
 
-.skills .skill .comunicacion{
+.skills .skill .net{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 2s net forwards;
 }
-@keyframes comunicacion {
+@keyframes net {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .scriban{
+    width: 0%;
+    animation: 2s scriban forwards;
+}
+@keyframes scriban {
     0%{width: 0%;}
     100%{width: 60%;}
 }
 
-.skills .skill .trabajo{
+.skills .skill .POO{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s POO forwards;
 }
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
+@keyframes POO {
     0%{width: 0%;}
     100%{width: 99%;}
 }
 
-.skills .skill .dedicacion{
+.skills .skill .sql{
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 2s sql forwards;
 }
-@keyframes dedicacion {
+@keyframes sql {
     0%{width: 0%;}
     100%{width: 65%;}
 }
@@ -720,4 +720,8 @@ footer .arriba{
 }
 .posicionImgContacto{
     margin-top: 100px;
+}
+.posicionImgContacto img{
+    border: 7px solid #1c8bb6;
+    border-radius: 12px;
 }
